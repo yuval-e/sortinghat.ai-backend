@@ -60,7 +60,7 @@ Sorting Hat:
   
     try {
       const response = await axios.post(
-        'https://api-inference.huggingface.co/models/OpenAssistant/oasst-sft-6-llama-30b',
+        'https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1'
         { inputs: prompt },
         {
           headers: {
