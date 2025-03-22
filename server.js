@@ -77,6 +77,7 @@ app.post('/api/sort', async (req, res) => {
   });
    
 
-app.listen(3001, () => {
-  console.log('🧙 Sorting Hat server is live at http://localhost:3001');
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`🧙 Sorting Hat server is live on port ${PORT}`);
 });
