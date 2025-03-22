@@ -5,7 +5,9 @@ const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://yuval-e.github.io'
+}));
 app.use(bodyParser.json());
 
 app.post('/api/sort', async (req, res) => {
